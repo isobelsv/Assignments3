@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+<!DOCTYPE html>
+    {% block nav-home %}
+    <a class="active">Home</a>
+    {% endblock %}
+{% block content %}
+<style>
+.image { 
+   position: relative; 
+   width: 100%; /* for IE 6 */
+}
+
+h1 { 
+   position: absolute; 
+   top: 100px; 
+   left: 100px; 
+   width: 100%; 
+}
+
+h1 span { 
+   color: white; 
+   font: <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet"> 
+   letter-spacing: -1px;  
+   background: rgb(0, 0, 0); 
+   background: rgba(0, 0, 0, 0.7);
+   padding: 10px; 
+}
+
+h1 span.spacer {
+	background: rgb(0, 0, 0);
+	background: rgba(0, 0, 0, 0.7);
+	padding:0.5px;
+}
+
+</style>
+<div>
+<title>Home</title>
+</div>
+<div class="image">
+	<img src="static/brazil.jpg" alt="Rio de Janeiro" style="width:100%;">
+	<h1><span>My three favorite things: <span class='spacer'></span><br /><br /><span class='spacer'></span>Learning new programming <br /><br /> Biiiiig data <br /><br /> The third thing is a actually a person... <br /><br /> my little boy: THEO!</span>
+	</h1>
+</div>
+{% endblock %}
+</html>
+
+

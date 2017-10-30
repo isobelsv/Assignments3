@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+<!DOCTYPE html>
+<html>
+    {% block nav-projects %}
+    <a class="active">Projects</a>
+    {% endblock %}
+{% block content %}
+<style>
+img {
+    float: left;
+    margin-right: 100px;
+    width: 30%;
+}
+</style>
+<title>Projects</title>
+    <body>
+        <main>
+            <img src="/static/theoaspanda.jpg" alt="Theo the panda">
+            <h2> Here are links to the code of some of my projects! </h2>
+            <p><a href="https://github.com/isobelsv/Assignments3/tree/master/proj3">A blog about Pete the Cat</a></p>
+            <p><a href="https://github.com/isobelsv/intro-python/blob/master/Project2DeanIsobel/neos.py">Near Earth Object Predictor</a></p>
+        </main>
+    </body>
+{% endblock %}
+</html>
+
+
+
